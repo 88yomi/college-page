@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.hamburger {
+	@apply bg-slate-100;
+	@apply w-4;
+	@apply h-px;
+}
+
+.faculties .faculties-list {
+	display: none;
+}
+
+.faculties:hover .faculties-list {
+	display: block;
+}
