@@ -3,15 +3,25 @@
 @tailwind components;
 
 .hamburger {
-	@apply bg-slate-100;
-	@apply w-4;
-	@apply h-px;
+  @apply bg-slate-100;
+  @apply w-4;
+  @apply h-px;
 }
 
 .faculties .faculties-list {
-	display: none;
+  display: none;
 }
 
 .faculties:hover .faculties-list {
-	display: block;
+  display: block;
+}
+
+img {
+  object-fit: cover;
+}
+
+.carousel-parent img {
+  height: 100%;
+  border-radius: 5px;
+  z-index: 5;
 }

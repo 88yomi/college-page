@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Hero from './components/Hero';
+import Carousel from './components/Carousel';
 import News from './components/News';
 import Enquiries from './components/Enquiries';
 import SiteLinks from './components/SiteLinks';
@@ -12,7 +12,7 @@ const App: React.FC = () => {
   return (
     <div className="bg-gray-600 text-gray-100 App container max-w-4xl mx-auto">
       <Header />
-      <Hero />
+      <Carousel />
       <News />
       <ImportantDates />
       <AerialView />
