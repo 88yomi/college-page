@@ -1,65 +1,43 @@
 import React from "react";
 
+const mockNews = [
+  {
+    title: 'National University Games Opening Ceremony',
+    details: 'The 67th university games lorem, ipsum dolor sit amet consectetur adipisicing elit.Eligendi, veniam.'
+  },
+  {
+    title: 'International Research Club Committee Visit',
+    details: 'The committee of the International Research Club Committee is visiting our prestigious university on the 2nd of August, 2022. The annual maintenance is scheduled for two weeks after then.'
+
+  },
+  {
+    title: 'New Minerals Discovered in the school\'s environs',
+    details: 'Diamonds were found on the ground around the school gate by the gateman and his coworkers around 7: 14pm last week'
+  },
+  {
+    title: 'National University Games Opening Ceremony',
+    details: 'The 67th university games lorem, ipsum dolor sit amet consectetur adipisicing elit.Eligendi, veniam.'
+  }
+]
+
 const News = () => {
   return (
-    <div className="my-6 px-6 py-10">
-      <h2>News</h2>
-      <h3 className="mb-4 hidden md:block">
-        University College News is the official magazine of The University of
-        Simcity. It is produced by a small volunteer editorial staff comprising
-        undergraduate students, graduates and visiting scholars.
-        <s>
-          It's not just a publication, but also a platform for emerging writers,
-          photographers, poets and illustrators to showcase their talents.
-        </s>
-      </h3>
-      <ul className="news-items space-y-8 md:grid md:grid-cols-2 md:grid-rows-2">
-        <li className="flex md:flex-col">
-          <img className="hidden md:block" src="" alt="news headline" />
-          <div className="">
-            <h6 className="uppercase font-semibold text-lg">
-              National University Games Opening Ceremony
-            </h6>
-            <p className="text-sm">
-              The 67th university games lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Eligendi, veniam.
-            </p>
-          </div>
-        </li>
-        <li className="flex md:flex-col">
-          <img className="hidden md:block" src="" alt="news headline" />
-          <div className="">
-            <h6 className="uppercase font-semibold text-lg">
-              International Research Club Committee Visit
-            </h6>
-            <p className="text-sm">
-              The committee of the International Research Club Committee is visiting our prestigious university on the 2nd of August, 2022. The annual maintenance is scheduled for two weeks after then.
-            </p>
-          </div>
-        </li>
-        <li className="flex md:flex-col">
-          <img className="hidden md:block" src="" alt="news headline" />
-          <div className="">
-            <h6 className="uppercase font-semibold text-lg">
-              New Minerals Discovered in the school's environs
-            </h6>
-            <p className="text-sm">
-              Diamonds were found on the ground around the school gate by the gateman and his coworkers around 7:14pm last week
-            </p>
-          </div>
-        </li>
-        <li className="flex md:flex-col">
-          <img className="hidden md:block" src="" alt="news headline" />
-          <div className="">
-            <h6 className="uppercase font-semibold text-lg">
-              National University Games Opening Ceremony
-            </h6>
-            <p className="text-sm">
-              The 67th university games lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Eligendi, veniam.
-            </p>
-          </div>
-        </li>
+    <div className=" px-6 py-6">
+      <h3 className="text-4xl font-bold text-gray-100 font-[forum] mb-8">University College News: <em>The Official School Magazine</em></h3>
+      <ul className="news-items space-y-16 text-center md:text-left">
+        {mockNews.map((news, index) => (
+          <li key={index} className="flxcol text-gray-200 cursor-pointer md:space-x-4">
+            <img className="w-5/6 h-32 mx-auto bg-green-50 mb-2 md:w-[98%] md:h-48 md:rounded-md md:mb-4" src="" alt="news headline" />
+            <div className="">
+              <h6 className="capitalize font-semibold text-lg mb-1 md:text-xl">
+                {news.title}
+              </h6>
+              <p className="text-sm text-gray-400 px-1 md:px-0 md:text-base">
+                {news.details}
+              </p>
+            </div>
+          </li>
+        ))}        
       </ul>
     </div>
   );

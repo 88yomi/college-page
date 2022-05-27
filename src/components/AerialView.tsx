@@ -4,7 +4,7 @@ import aerial from '../images/aerial.jpg';
 const AerialView = () => {
 	return (
     <div className="px-6 my-8">
-      <img className="h-full" src={aerial} alt="aerial view of the universit of simcity" />
+      <img className="mx-auto w-full h-[30rem] ax-h-[80vh] object-center" src={aerial} alt="aerial view of the university of simcity" />
     </div>
   );
 }

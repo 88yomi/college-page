@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@types/flickity": "^2.2.6"
+    "@types/flickity": "^2.2.6",
+    "node-sass": "^7.0.1"
   }
 }

@@ -1,7 +1,22 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx,html}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        custom: {
+          100: '#F1DAC4',
+          200: '#A69CAC',
+          300: '#3E3F65',
+          400: '#161B33',
+          500: '#0D0C1D',
+          600: '#96ADC8'
+        },
+        tx: {
+          100: '#111111',
+          200: '#ffffff',
+        }
+      }
+    },
   },
   plugins: [],
 }
