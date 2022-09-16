@@ -7,7 +7,7 @@
 
   &.show {
     display: block;
-    @apply bg-custom-600 px-2 divide-gray-800 rounded-md rounded-tr-none w-screen max-w-screen-sm md:w-max text-center md:text-left;
+    @apply bg-custom-800 px-4 py-1 divide-gray-800 rounded-md rounded-tr-none w-screen max-w-screen-sm md:w-max text-center md:text-left;
   }
 
   @apply md:absolute right-0; 
@@ -23,14 +23,14 @@ body {
 .links {
   position: relative;
   z-index: 5;
-  @apply md:px-4 py-1 rounded-md rounded-br-none;
+  @apply md:px-6 py-1 rounded-md rounded-br-none;
   cursor: pointer;
 }
 
 .faculties.show,
 .colleges.show,
 .links.show {
-  @apply bg-custom-600 text-center md:text-left text-gray-900;
+  @apply bg-custom-800 text-center md:text-left text-gray-900;
 }
 
 .faculties-list, .colleges-list, .links-list {

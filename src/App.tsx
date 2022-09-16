@@ -1,13 +1,4 @@
 import React, { useEffect } from 'react';
-// import Header from './components/Header';
-// import Carousel from './components/Carousel';
-// import News from './components/News';
-// import Enquiries from './components/Enquiries';
-// import SiteLinks from './components/SiteLinks';
-// import ImportantDates from './components/ImportantDates';
-// import AerialView from './components/AerialView';
-// import Footer from './components/Footer';
-
 import {
   Header,
   Carousel,
@@ -18,6 +9,8 @@ import {
   AerialView,
   Footer,
 } from './components';
+import { Route, Routes } from 'react-router-dom';
+import Faculty from '../src/pages/Faculty'
 
 const App: React.FC = () => {
   
@@ -26,6 +19,22 @@ const App: React.FC = () => {
     const body = document.querySelector('body')!;
     const menuItems = '.faculties, .colleges, .links, .links-list, .faculties-list, .colleges-list';
 
+    const hamburger = document.querySelector(".hamburger");
+    const lines = document.querySelectorAll(".hamburger span");
+
+
+    hamburger?.addEventListener("click", () => {
+      hamburger.classList.remove("open");
+
+      lines.forEach((node) => {
+        node.classList.remove("open");
+      });
+
+      document.querySelector('.overlay')?.classList.remove('hidden');
+
+    });
+
+    
     body.addEventListener('click', (e) => {
       const target = e.target as HTMLElement;
       if(!document.querySelector('.navigation')?.contains(target)) {
@@ -37,16 +46,26 @@ const App: React.FC = () => {
   
   
   return (
-    <div className="font-[Inter] bg-gray-600- bg-custom-300 text-gray-100 App container max-w-4xl mx-auto">
-      <Header />
-      <Carousel />
-      <News />
-      <ImportantDates />
-      <AerialView />
-      {/* Some of our Top Courses */}
-      <SiteLinks />
-      <Enquiries />
-      <Footer />
+    <div className="font-[Inter] bg-custom-300 text-gray-100 App container max-w-4xl mx-auto">
+      <Routes>
+        <Route path='/' element={
+        <>
+          <Header />
+          <Carousel />
+          <News />
+          <ImportantDates />
+          <AerialView />
+          {/* Some of our Top Courses */}
+          <SiteLinks />
+          <Enquiries />
+          <Footer /> 
+        </>
+      } />
+        <Route path='faculty'>
+          <Route path=':culty' element={<Faculty />} />
+        </Route>
+      </Routes> 
+      
     </div>
   );
 }

@@ -38,7 +38,7 @@ const ImportantDates = () => {
 			<ul className='space-y-12 md:grid md:grid-cols-2 md:space-y-0 md:gap-y-16 '>
 				{mockImportantDates.map((date, index) => (
 				<li key={index} className='text-center md:text-left md:flex md:items-center md:space-x-6 px-6'>
-					<div className='max-w-[40px]'>
+					<div className='max-w-[40px] mx-auto mb-4 md:mx-0 md:mb-0'>
 						<div className="mx-auto h-10 w-10">
 							{date.icon}
 						</div>

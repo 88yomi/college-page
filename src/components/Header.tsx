@@ -1,11 +1,14 @@
 import React from "react";
 import { Navigation } from "./";
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
     <>
     <div id="header" className="pt-6 pb-2 pl-6 md:pt-4">
-      <h1 className="changa-one text-3xl font-bold md:text-4xl">THE UNIVERSITY OF SIMCITY</h1>
+      <Link to="/">
+        <h1 className="font-['Montserrat'] text-4xl font-extrabold md:pt-8">THE UNIVERSITY OF SIMCITY</h1>
+      </Link>
     </div>
       <Navigation />
     </>
