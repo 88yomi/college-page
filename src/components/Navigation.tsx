@@ -139,7 +139,7 @@ const Navigation: React.FC = () => {
         <span className="hamburger-middle"></span>
         <span className="hamburger-bottom"></span>
       </button>
-      <div className=" overlay hidden flex flex-col w-full md:pr-8 md:flex md:flex-row md:items-center md:justify-end space-y-4 md:space-y-0 items-center h-full">
+      <div className=" overlay hidden- flex flex-col w-full md:pr-8 md:flex md:flex-row md:items-center md:justify-end space-y-4 md:space-y-0 items-center h-full">
         <div className="faculties">
           Faculties
           <ul className="faculties-list">
