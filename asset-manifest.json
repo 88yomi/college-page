@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/college-page/static/css/main.6df57099.css",
-    "main.js": "/college-page/static/js/main.914ade5e.js",
+    "main.js": "/college-page/static/js/main.20ff7c65.js",
     "static/media/aerial.jpg": "/college-page/static/media/aerial.69b57678ae0f709166a0.jpg",
     "static/media/photo4.jpg": "/college-page/static/media/photo4.b92d12bbf83d11415d79.jpg",
     "static/media/photo5.jpg": "/college-page/static/media/photo5.b92d12bbf83d11415d79.jpg",
@@ -11,10 +11,10 @@
     "static/media/photo6.jpg": "/college-page/static/media/photo6.36142e452cdf4059d634.jpg",
     "index.html": "/college-page/index.html",
     "main.6df57099.css.map": "/college-page/static/css/main.6df57099.css.map",
-    "main.914ade5e.js.map": "/college-page/static/js/main.914ade5e.js.map"
+    "main.20ff7c65.js.map": "/college-page/static/js/main.20ff7c65.js.map"
   },
   "entrypoints": [
     "static/css/main.6df57099.css",
-    "static/js/main.914ade5e.js"
+    "static/js/main.20ff7c65.js"
   ]
 }
