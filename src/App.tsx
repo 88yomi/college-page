@@ -46,8 +46,8 @@ const App: React.FC = () => {
   
   
   return (
-    <div className="font-[Inter] bg-custom-300 text-gray-100 App container max-w-4xl mx-auto">
       <Routes>
+    <div className="font-[Inter] bg-custom-300 text-gray-100 App container max-w-4xl mx-auto tracking-normal">
         <Route path='/' element={
         <>
           <Header />
@@ -64,9 +64,9 @@ const App: React.FC = () => {
         <Route path='faculty'>
           <Route path=':culty' element={<Faculty />} />
         </Route>
-      </Routes> 
       
     </div>
+      </Routes> 
   );
 }
 
